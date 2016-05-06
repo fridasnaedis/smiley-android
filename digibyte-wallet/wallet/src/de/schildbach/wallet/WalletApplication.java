@@ -370,14 +370,17 @@ public class WalletApplication extends Application
 		addNewKeyToWallet();
 	}
 
-	public void addNewKeyToWallet()
-	{
-		wallet.addKey(new ECKey());
+  public ECKey addNewKeyToWallet()
+  {
+      final ECKey key = new ECKey();
+    wallet.addKey(key);
 
-		backupWallet();
+    backupWallet();
 
-		config.armBackupReminder();
-	}
+    config.armBackupReminder();
+    
+    return key;
+  }
 
 	public void saveWallet()
 	{

@@ -95,6 +95,11 @@ public class Constants
 	public static final int MBTC_MAX_PRECISION = 5;
 
 	public static final int LOCAL_PRECISION = 8;        //altcoins need more digits in BTC
+  public static final String BITID_PARAM_NONCE = "x";
+  public static final String BITID_PARAM_UNSECURE= "u";
+  public static final String BITID_PARAM_ADDRESS = "address";
+  public static final String BITID_PARAM_SIGNATURE = "signature";
+  public static final String BITID_PARAM_URI = "uri";
     //TODO: What about these two things?
 	public static final String DONATION_ADDRESS = CoinDefinition.DONATION_ADDRESS;
 	public static final String REPORT_EMAIL = "xploited.ca@gmail.com";

@@ -40,6 +40,7 @@ import com.google.bitcoin.core.Transaction;
 import com.google.protobuf.CodedInputStream;
 import com.google.protobuf.CodedOutputStream;
 
+import de.schildbach.wallet.BitidIntent;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.PaymentIntent;
 import de.schildbach.wallet.util.Bluetooth;
@@ -135,6 +136,12 @@ public abstract class RequestPaymentRequestTask
 									throw new UnsupportedOperationException();
 
 								}
+
+                @Override
+                protected void handleBitidIntent(BitidIntent bitidIntent) 
+                {
+                  throw new UnsupportedOperationException();
+                }
 
 								@Override
 								protected void error(final int messageResId, final Object... messageArgs)
